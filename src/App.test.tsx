@@ -13,6 +13,6 @@ describe('App component', () => {
 	})
 
 	it('renders component title', () => {
-		expect(screen.getByText(/home/i)).toBeInTheDocument();
-	});
+		expect(screen.getByText(/Header/i)).toBeInTheDocument()
+	})
 })
