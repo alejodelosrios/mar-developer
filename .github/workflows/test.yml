@@ -10,7 +10,7 @@ jobs:
       - name: Install Dependencies
         run: yarn install --frozen-lockfile
       - name: Install Cypress
-        run: yarndd cypress
+        run: yarn add cypress
       - name: Unit Tests
         run: yarn test --watchAll=false
       - name: E2E Tests
