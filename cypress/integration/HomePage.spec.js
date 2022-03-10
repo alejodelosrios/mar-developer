@@ -1,6 +1,10 @@
 describe('Smoke Test', () => {
   it('can view the home page', () => {
     cy.visit('/')
-    cy.contains('Home')
+    cy.contains('Header')
+    cy.contains('About')
+    cy.contains('Experience')
+    cy.contains('Portfolio')
+    cy.contains('Testimonials')
   })
 })
