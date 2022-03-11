@@ -4,15 +4,15 @@ import App from './App'
 import { BrowserRouter } from 'react-router-dom'
 
 describe('App component', () => {
-	beforeEach(() => {
-		render(
-			<BrowserRouter>
-				<App />
-			</BrowserRouter>
-		)
-	})
+  beforeEach(() => {
+    render(
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    )
+  })
 
-	it('renders component title', () => {
-		expect(screen.getByText(/Header/i)).toBeInTheDocument()
-	})
+  it('renders component title', () => {
+    expect(screen.getByText(/manuel alejandro/i)).toBeInTheDocument()
+  })
 })
