@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
+
+/* ============== General styles ================= */
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-weight: bold;
+  }
+
+  h1 {
+    @apply text-4xl;
+  }
+  section {
+    @apply mt-32;
+  }
+  section > h2,
+  section > h5 {
+    @apply text-center text-cgray;
+  }
+  section > h2 {
+    @apply text-dark mb-12;
+  }
+  img {
+    @apply block object-cover w-full;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply w-max block bg-primary text-white py-3 px-5 rounded-lg cursor-pointer hover:border hover:border-primary hover:bg-white hover:text-primary transition-all ease-in duration-400;
+  }
+}

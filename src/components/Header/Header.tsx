@@ -1,5 +1,9 @@
 import React from 'react'
 
 export const Header = () => {
-	return <div>Header</div>
+	return (
+		<div className="font-poppins">
+			<h1>Header</h1>
+		</div>
+	)
 }
