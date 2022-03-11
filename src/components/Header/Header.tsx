@@ -1,6 +1,7 @@
 import React from 'react'
 import ME from '../../assets/perfil_manuel.png'
 import { Cta } from '../Cta/Cta'
+import { HeaderSocials } from '../HeaderSocials/Headersocials'
 
 export const Header = () => {
   return (
@@ -13,6 +14,7 @@ export const Header = () => {
       </h1>
       <h5>FullStack Developer</h5>
       <Cta />
+      <HeaderSocials />
       <div>
         <img src={ME} alt="me" data-testid="profile-img" />
       </div>

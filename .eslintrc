@@ -81,5 +81,6 @@
     "react/jsx-one-expression-per-line": "off",
     "react/jsx-wrap-multilines": "off",
     "react/destructuring-assignment": "off",
+    "react/jsx-no-target-blank": "off"
   }
 }
