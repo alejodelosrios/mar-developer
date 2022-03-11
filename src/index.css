@@ -12,7 +12,7 @@
   h3,
   h4,
   h5 {
-    font-weight: bold;
+    @apply font-bold;
   }
 
   h1 {
@@ -35,6 +35,21 @@
 
 @layer components {
   .btn {
-    @apply w-max block bg-primary text-white py-3 px-5 rounded-lg cursor-pointer hover:border hover:border-primary hover:bg-white hover:text-primary transition-all ease-in duration-400;
+    @apply w-max block bg-primary text-white py-3 px-5 rounded-lg cursor-pointer hover:border hover:border-primary hover:bg-white hover:text-primary transition-all ease-in duration-300;
+  }
+  .btn-secondary {
+    @apply w-max block bg-white text-primary py-3 px-5 rounded-lg cursor-pointer border  border-primary hover:border hover:border-none hover:bg-primary hover:text-white transition-all ease-in duration-300;
+  }
+  .flex-cont-max {
+    @apply flex flex-row justify-between items-center w-max;
+  }
+  .flex-cont-full {
+    @apply flex flex-row justify-between items-center w-full;
+  }
+  .flex-col-cont-max {
+    @apply flex flex-col justify-between items-center w-max;
+  }
+  .flex-col-cont-full {
+    @apply flex flex-col justify-between items-center w-full;
   }
 }
