@@ -1,5 +1,6 @@
 import React from 'react'
 import { About } from '../About/About'
+import { Contact } from '../Contact/Contact'
 import { DarkModeButton } from '../DarkMode/DarkModeButton'
 import { Experience } from '../Experience/Experience'
 import { Footer } from '../Footer/Footer'
@@ -17,6 +18,7 @@ export const Home = () => {
       <Experience />
       <Testimonials />
       <h2>Portfolio</h2>
+      <Contact />
       <Footer />
     </>
   )

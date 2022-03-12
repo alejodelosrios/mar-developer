@@ -8,7 +8,7 @@
 
 @layer base {
   html {
-    @apply container mx-auto transition duration-500;
+    @apply scroll-smooth container mx-auto transition duration-500;
   }
   h1,
   h2,
@@ -22,7 +22,7 @@
     @apply text-4xl;
   }
   section {
-    @apply mt-32;
+    @apply mt-32 h-screen;
   }
   section > h2,
   section > h5 {
@@ -33,6 +33,12 @@
   }
   img {
     @apply block object-cover w-full;
+  }
+  nav {
+    backdrop-filter: blur(15px);
+  }
+  nav > a {
+    @apply flex p-2 text-2xl text-white bg-transparent rounded-full hover:bg-dark;
   }
 }
 
@@ -54,5 +60,8 @@
   }
   .flex-col-cont-full {
     @apply flex flex-col justify-center w-full;
+  }
+  .active {
+    @apply bg-dark;
   }
 }
