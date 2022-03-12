@@ -5,7 +5,7 @@ import { About } from './components/About/About'
 
 function App() {
   return (
-    <div className="text-dark font-poppins scroll-smooth dark:text-white">
+    <div className="text-dark font-poppins dark:text-white">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
