@@ -1,9 +1,5 @@
-import React from "react"
+import React from 'react'
 
 export const Experience = () => {
-		return(
-				<div>
-					Experience
-				</div>
-				)
+  return <div>Experience</div>
 }

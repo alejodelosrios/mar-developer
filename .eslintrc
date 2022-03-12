@@ -1,6 +1,12 @@
 {
-  "plugins": ["prettier", "@typescript-eslint"],
+  "plugins": ["prettier", "@typescript-eslint", "testing-library"],
   "extends": ["airbnb-typescript", "react-app", "prettier"],
+   "overrides": [
+    {
+      "files": ["**/__tests__/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[jt]s?(x)"],
+      "extends": ["plugin:testing-library/react"]
+    },
+  ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "project": "./tsconfig.json"
@@ -13,6 +19,8 @@
     }
   },
   "rules": {
+    "testing-library/no-render-in-setup": ["error", {"allowTestingFrameworkSetupHook": "beforeAll"}],
+
     "object-curly-spacing": ["warn", "always"],
     "no-unused-vars": [
       "warn",
@@ -72,6 +80,7 @@
     "react/no-unescaped-entities": "off",
     "react/jsx-one-expression-per-line": "off",
     "react/jsx-wrap-multilines": "off",
-    "react/destructuring-assignment": "off"
+    "react/destructuring-assignment": "off",
+    "react/jsx-no-target-blank": "off"
   }
 }
