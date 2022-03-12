@@ -7,8 +7,8 @@
 /* ============== General styles ================= */
 
 @layer base {
-  body {
-    @apply container mx-auto;
+  html {
+    @apply container mx-auto transition duration-500;
   }
   h1,
   h2,
