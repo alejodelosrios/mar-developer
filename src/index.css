@@ -7,6 +7,9 @@
 /* ============== General styles ================= */
 
 @layer base {
+  body {
+    @apply container mx-auto;
+  }
   h1,
   h2,
   h3,
@@ -41,15 +44,15 @@
     @apply w-max block bg-white text-primary py-3 px-5 rounded-lg cursor-pointer border  border-primary hover:border hover:border-none hover:bg-primary hover:text-white transition-all ease-in duration-300;
   }
   .flex-cont-max {
-    @apply flex flex-row justify-between items-center w-max;
+    @apply flex flex-row items-center w-max;
   }
   .flex-cont-full {
-    @apply flex flex-row justify-between items-center w-full;
+    @apply flex flex-row items-center w-full;
   }
   .flex-col-cont-max {
-    @apply flex flex-col justify-between items-center w-max;
+    @apply flex flex-col justify-center w-max;
   }
   .flex-col-cont-full {
-    @apply flex flex-col justify-between items-center w-full;
+    @apply flex flex-col justify-center w-full;
   }
 }
