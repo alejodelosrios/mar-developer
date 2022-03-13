@@ -8,7 +8,7 @@
 
 @layer base {
   html {
-    @apply scroll-smooth container mx-auto transition duration-500;
+    @apply container mx-auto scroll-smooth transition duration-500;
   }
   h1,
   h2,
@@ -22,14 +22,14 @@
     @apply text-4xl;
   }
   section {
-    @apply mt-32 h-screen;
+    @apply h-screen mt-32;
   }
   section > h2,
   section > h5 {
     @apply text-center text-cgray;
   }
   section > h2 {
-    @apply text-dark mb-12;
+    @apply mb-12 text-dark;
   }
   img {
     @apply block object-cover w-full;
@@ -44,10 +44,10 @@
 
 @layer components {
   .btn {
-    @apply w-max block bg-primary text-white py-3 px-5 rounded-lg cursor-pointer hover:border hover:border-primary hover:bg-white hover:text-primary transition-all ease-in duration-300;
+    @apply block px-5 py-3 text-white rounded-lg cursor-pointer w-max bg-primary hover:border hover:border-primary hover:bg-white hover:text-primary transition-all ease-in duration-300;
   }
   .btn-secondary {
-    @apply w-max block bg-white text-primary py-3 px-5 rounded-lg cursor-pointer border  border-primary hover:border hover:border-none hover:bg-primary hover:text-white transition-all ease-in duration-300;
+    @apply block px-5 py-3 bg-white border rounded-lg cursor-pointer w-max text-primary border-primary hover:border hover:border-none hover:bg-primary hover:text-white transition-all ease-in duration-300;
   }
   .flex-cont-max {
     @apply flex flex-row items-center w-max;
@@ -63,5 +63,13 @@
   }
   .active {
     @apply bg-dark;
+  }
+
+  /* About section*/
+  .section-title {
+    @apply w-max text-primary text-[2rem] font-bold leading-8;
+  }
+  .about-card {
+    @apply flex flex-col items-center justify-center px-6 py-8 border border-transparent bg-secondary rounded-xl dark:text-dark hover:bg-transparent hover:border-primary hover:text-primary dark:hover:text-primary;
   }
 }
