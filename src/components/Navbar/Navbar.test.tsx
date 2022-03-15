@@ -1,6 +1,6 @@
-import {render, screen, fireEvent} from '@testing-library/react'
-import {BrowserRouter} from 'react-router-dom'
-import {Navbar} from './Navbar'
+import { render, screen, fireEvent } from '@testing-library/react'
+import { BrowserRouter } from 'react-router-dom'
+import { Navbar } from './Navbar'
 
 describe('Cta Component', () => {
   beforeEach(() => {
@@ -9,7 +9,6 @@ describe('Cta Component', () => {
         <Navbar />
       </BrowserRouter>
     )
-
   })
   describe('Link elements are in the document', () => {
     it('should have a home link', () => {
