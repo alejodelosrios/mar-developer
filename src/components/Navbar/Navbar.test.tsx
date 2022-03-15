@@ -1,9 +1,15 @@
-import { render, screen, fireEvent } from '@testing-library/react'
-import { Navbar } from './Navbar'
+import {render, screen, fireEvent} from '@testing-library/react'
+import {BrowserRouter} from 'react-router-dom'
+import {Navbar} from './Navbar'
 
 describe('Cta Component', () => {
   beforeEach(() => {
-    render(<Navbar />)
+    render(
+      <BrowserRouter>
+        <Navbar />
+      </BrowserRouter>
+    )
+
   })
   describe('Link elements are in the document', () => {
     it('should have a home link', () => {
@@ -12,9 +18,8 @@ describe('Cta Component', () => {
       expect(linkElement).toHaveAttribute('href', '#home')
     })
     it('should have a about link', () => {
-      const linkElement = screen.getByTestId('aboutId')
-      expect(linkElement).toBeInTheDocument()
-      expect(linkElement).toHaveAttribute('href', '#about')
+      const divElement = screen.getByTestId('aboutId')
+      expect(divElement).toBeInTheDocument()
     })
     it('should have a portfolio link', () => {
       const linkElement = screen.getByTestId('portfolioId')
