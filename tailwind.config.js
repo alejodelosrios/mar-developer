@@ -7,7 +7,8 @@ module.exports = {
         primary: '#FFD416',
         secondary: '#FFE160',
         cgray: '#F4F4F4',
-        dark: '#454443',
+        dark: '#717171',
+        ligthgray:'#F0F0F0'
       },
       fontFamily: {
         poppins: "'Poppins', sans-serif",

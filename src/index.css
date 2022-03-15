@@ -8,7 +8,7 @@
 
 @layer base {
   html {
-    @apply container mx-auto scroll-smooth transition duration-500;
+    @apply container mx-auto scroll-smooth transition duration-500 bg-ligthgray;
   }
   h1,
   h2,
@@ -44,10 +44,10 @@
 
 @layer components {
   .btn {
-    @apply block px-5 py-3 text-white rounded-lg cursor-pointer w-max bg-primary hover:border hover:border-primary hover:bg-white hover:text-primary transition-all ease-in duration-300;
+    @apply block px-5 py-3 text-white rounded-lg cursor-pointer w-max bg-primary hover:border hover:border-dark hover:bg-transparent hover:text-dark transition-all ease-in duration-300;
   }
   .btn-secondary {
-    @apply block px-5 py-3 bg-white border rounded-lg cursor-pointer w-max text-primary border-primary hover:border hover:border-none hover:bg-primary hover:text-white transition-all ease-in duration-300;
+    @apply block px-5 py-3 bg-transparent border rounded-lg cursor-pointer w-max text-primary border-primary hover:border hover:border-none hover:bg-primary hover:text-white transition-all ease-in duration-300;
   }
   .flex-cont-max {
     @apply flex flex-row items-center w-max;

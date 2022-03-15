@@ -3,16 +3,12 @@ import ME from '../../assets/perfil_manuel_fondo.jpg'
 import { FaAward } from 'react-icons/fa'
 import { VscFolderLibrary } from 'react-icons/vsc'
 import { FiUsers } from 'react-icons/fi'
+import { SectionTitle } from '../SectionTitle/SectionTitle'
 
 export const About = () => {
   return (
     <section id="about" className="mx-4 md:mx-6">
-      <div className="w-ful items-center mb-12 flex-col-cont-max gap-1">
-        <span className="w-max" data-testid="spanSubtitleId">
-          Get To Know
-        </span>
-        <h2 className="section-title">About</h2>
-      </div>
+      <SectionTitle title="About" subtitle="Get To Know" />
       <div className="grid grid-cols-1 gap-8 place-items-center place-content-center md:grid-cols-2">
         <div className="flex-cont-full justify-center">
           <div className="grid place-items-center w-[60%] md:w-3/4 rounded-[2rem] aspect-square bg-gradient-to-br from-primary to-transparent">

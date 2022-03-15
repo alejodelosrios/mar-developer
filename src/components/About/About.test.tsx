@@ -1,4 +1,5 @@
 import { render, screen, within } from '@testing-library/react'
+import { SectionTitle } from '../SectionTitle/SectionTitle'
 import { About } from './About'
 
 describe('About Component', () => {
@@ -6,16 +7,18 @@ describe('About Component', () => {
     render(<About />)
   })
   describe('Section title', () => {
-    it('should have a H2', () => {
-      const headingElement = screen.getByRole('heading', { level: 2 })
-      expect(headingElement).toBeInTheDocument()
-      expect(headingElement.textContent).toBe('About')
+    let component
+    const props = {
+      title: 'Prueba',
+      subtitle: 'Subtítulo de prueba',
+    }
+    it('should render SectionTitle component', () => {
+      component = render(<SectionTitle title={props.title} subtitle={props.subtitle} />)
+      expect(component).toBeDefined()
     })
-    it('should have a subtitle', () => {
-      const spanElement = screen.getByTestId('spanSubtitleId')
-      expect(spanElement).toBeInTheDocument()
-      expect(spanElement.textContent).toBe('Get To Know')
-    })
+    //it('should call the component with the right props', () => {
+    //expect(SectionTitle).toHaveBeenCalledWith(props)
+    //})
   })
 
   describe('Body section', () => {
