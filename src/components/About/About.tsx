@@ -7,10 +7,10 @@ import { SectionTitle } from '../SectionTitle/SectionTitle'
 
 export const About = () => {
   return (
-    <section id="about" className="mx-4 md:mx-6">
+    <section id="about" className="items-center h-screen mx-4 md:mx-0 flex-col-cont-full">
       <SectionTitle title="About" subtitle="Get To Know" />
       <div className="grid grid-cols-1 gap-8 place-items-center place-content-center md:grid-cols-2">
-        <div className="flex-cont-full justify-center">
+        <div className="justify-center md:justify-start flex-cont-full">
           <div className="grid place-items-center w-[60%] md:w-3/4 rounded-[2rem] aspect-square bg-gradient-to-br from-primary to-transparent">
             <img
               className="w-full aspect-square rounded-[2rem] overflow-hidden rotate-[10deg] hover:rotate-0 transition duration-500"
@@ -20,8 +20,8 @@ export const About = () => {
             />
           </div>
         </div>
-        <div className="flex-col-cont-full items-center  gap-4">
-          <div className="grid grid-cols-2 lg:grid-cols-3 w-full gap-8">
+        <div className="items-center flex-col-cont-full gap-4">
+          <div className="w-full grid grid-cols-2 lg:grid-cols-3 gap-8">
             <article className="about-card" data-testid="experienceCardId">
               <FaAward className="text-cgray" data-testid="cardIconId" />
               <h5>Experience</h5>
@@ -43,7 +43,7 @@ export const About = () => {
             quibusdam molestias excepturi dicta laudantium Veritatis perferendis aliquid quisquam
             voluptatum quam unde Eligendi nihil quaerat magni tenetur sed?
           </p>
-          <a className="btn self-start" href="#contact">
+          <a className="self-start btn" href="#contact">
             Let's Talk
           </a>
         </div>

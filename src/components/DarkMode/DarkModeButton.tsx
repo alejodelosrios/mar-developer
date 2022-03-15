@@ -4,12 +4,12 @@ import useDarkMode from '../../hooks/useDarkMode'
 export const DarkModeButton = () => {
   const [colorTheme, setTheme] = useDarkMode()
   return (
-    <div className="fixed top-4 right-4 z-10">
+    <div className="fixed z-10 top-4 right-4">
       <span
         onClick={() => setTheme(colorTheme)}
-        className="w-10 h-10 bg-primary dark:text-white rounded-full shadow-lg cursor-pointer"
+        className="w-10 h-10 rounded-full shadow-lg cursor-pointer bg-primary dark:text-white"
       >
-        {colorTheme === 'dark' ? (
+        {colorTheme === 'light' ? (
           <svg
             className="w-6 h-6"
             fill="none"
