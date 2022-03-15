@@ -2,13 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;800&display=swap');
 
 /* ============== General styles ================= */
 
 @layer base {
   html {
-    @apply container mx-auto scroll-smooth transition duration-500 bg-ligthgray;
+    @apply scroll-smooth transition duration-500 bg-ligthgray;
   }
   h1,
   h2,
@@ -21,8 +21,8 @@
   h1 {
     @apply text-4xl;
   }
-  section {
-    @apply h-screen mt-32;
+  p {
+    @apply font-extralight;
   }
   section > h2,
   section > h5 {
@@ -38,6 +38,9 @@
     backdrop-filter: blur(15px);
   }
   nav > a {
+    @apply flex p-2 text-2xl text-white bg-transparent rounded-full hover:bg-dark;
+  }
+  #about-link {
     @apply flex p-2 text-2xl text-white bg-transparent rounded-full hover:bg-dark;
   }
 }

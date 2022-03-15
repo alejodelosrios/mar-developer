@@ -6,7 +6,7 @@ import { frontendSkills, backendSkills } from '../../utils/skills'
 
 export const Experience = () => {
   return (
-    <section id="experience" className="mx-4 md:mx-6">
+    <section id="experience" className="mx-4 mt-32 md:mx-0">
       <SectionTitle title="Experience" subtitle="What Skills I Have" />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
         <MainCard data-testid="frontendcardid" title="Frontend Development">
