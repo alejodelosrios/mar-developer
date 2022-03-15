@@ -7,7 +7,7 @@ import { SectionTitle } from '../SectionTitle/SectionTitle'
 
 export const About = () => {
   return (
-    <section id="about" className="items-center mx-4 md:mx-0 flex-col-cont-full">
+    <section id="about" className="items-center h-screen mx-4 md:mx-0 flex-col-cont-full">
       <SectionTitle title="About" subtitle="Get To Know" />
       <div className="grid grid-cols-1 gap-8 place-items-center place-content-center md:grid-cols-2">
         <div className="justify-center md:justify-start flex-cont-full">
