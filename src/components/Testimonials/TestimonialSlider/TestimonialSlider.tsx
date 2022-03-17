@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { testimonials } from '../../../utils/testimonials'
-import BtnSlider from './BtnSlider'
+import { BtnSlider } from './BtnSlider'
 
 export const TestimonialSlider = () => {
   const [slideIndex, setSlideIndex] = useState(1)
@@ -37,6 +37,7 @@ export const TestimonialSlider = () => {
         >
           <div className="flex justify-center w-full">
             <img
+              data-testid="slider-img"
               className="aspect-square overflow-hidden rounded-full border border-primary border-2 w-[4rem]"
               src={avatar}
               alt={`${name}_img`}
@@ -55,6 +56,7 @@ export const TestimonialSlider = () => {
         {Array.from({ length: testimonials.length }).map((item, index) => (
           <div
             key={index}
+            data-testid="slider-dot"
             onClick={() => moveDot(index + 1)}
             className={
               slideIndex === index + 1

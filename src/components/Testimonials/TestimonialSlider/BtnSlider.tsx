@@ -6,11 +6,12 @@ type Props = {
   moveSlide(): void
 }
 
-export default function BtnSlider({ direction, moveSlide }: Props) {
+export const BtnSlider = ({ direction, moveSlide }: Props) => {
   //console.log(direction, moveSlide)
   return (
     <button
       onClick={moveSlide}
+      data-testid="btn-slider"
       className={
         direction === 'next'
           ? 'width-[60px] rounded-full absolute flex justify-center items-center cursor-pointer top-[30%] left-5 -translate-y-[60%]'
