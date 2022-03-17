@@ -7,7 +7,6 @@ type Props = {
 }
 
 export const BtnSlider = ({ direction, moveSlide }: Props) => {
-  //console.log(direction, moveSlide)
   return (
     <button
       onClick={moveSlide}
