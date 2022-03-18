@@ -10,7 +10,7 @@ export const ProjectCard = ({ github, web, image, title, children }: Props) => {
   return (
     <article
       id="project-card"
-      className="relative w-[360px] h-[260px] flex flex-col justify-center items-center cursor-pointer bg-secondary dark:bg-transparent dark:border dark:border-lightgray  hover:border-transparent rounded-t-xl transition-all duration-1000"
+      className="relative w-[360px] lg:w-[325.33px] xl:w-[410.66px] h-[260px] flex flex-col justify-center items-center cursor-pointer bg-secondary dark:bg-transparent dark:border dark:border-lightgray  hover:border-transparent rounded-t-xl transition-all duration-1000"
     >
       <img
         className="absolute left-0 top-0 w-full h-full opacity-0 hover:opacity-100 transition duration-[2000ms] rounded-t-xl"
