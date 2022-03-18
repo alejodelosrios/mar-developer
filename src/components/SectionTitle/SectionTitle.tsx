@@ -7,7 +7,7 @@ export type Props = {
 
 export const SectionTitle: FC<Props> = ({ title, subtitle }) => {
   return (
-    <div className="w-full items-center mb-12 flex-col-cont-max gap-1">
+    <div data-testid="section-title" className="w-full items-center mb-12 flex-col-cont-max gap-1">
       <span className="w-max" data-testid="spanSubtitleId">
         {subtitle}
       </span>
